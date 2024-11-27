@@ -1,5 +1,5 @@
 ### Cadastra um novo usuário
-POST http://localhost:3000/api/auth/signup
+POST https://student-card-backend.onrender.com/api/auth/signup
 Content-Type: application/json
 
 {
@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 ### Entra com um usuário existente
-POST http://localhost:3000/api/auth/login
+POST https://student-card-backend.onrender.com/api/auth/login
 Content-Type: application/json
 
 {
@@ -18,13 +18,13 @@ Content-Type: application/json
 }
 
 ### Retorna todas as carteirinhas (Protegido)
-GET http://localhost:3000/api/students
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MjE2YzhmNjQ1YzJjZjg4MzVmNGJkMSIsImlhdCI6MTczMDI0Mzc2MCwiZXhwIjoxNzMwMjQ3MzYwfQ.iDV1zYNEzHvPTpVgNjFevEL6gBougbx7a9tc4NUIm_I
+GET https://student-card-backend.onrender.com/api/students
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMjU4MDI0NCwiZXhwIjoxNzMyNTgzODQ0fQ.y10d_gBIaOvApa9SZNsvIW-V2J4Hh5u4kSUbaUhckUQ
 
 ### Cria uma carteirinha (Protegido)
-POST http://localhost:3000/api/students
+POST https://student-card-backend.onrender.com/api/students
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MjE2YzhmNjQ1YzJjZjg4MzVmNGJkMSIsImlhdCI6MTczMDI0Mzc2MCwiZXhwIjoxNzMwMjQ3MzYwfQ.iDV1zYNEzHvPTpVgNjFevEL6gBougbx7a9tc4NUIm_I
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMjU4MDI0NCwiZXhwIjoxNzMyNTgzODQ0fQ.y10d_gBIaOvApa9SZNsvIW-V2J4Hh5u4kSUbaUhckUQ
 
 {
   "name": "Renan Costa Alencar",
@@ -38,14 +38,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MjE2YzhmN
 
 ### Retorna uma única carteirinha pelo ID (Protegido)
 # Substitua `student_id` com o ID do estudante para testar este endpoint
-GET http://localhost:3000/api/students/67216ce3645c2cf8835f4bd7
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MjE2YzhmNjQ1YzJjZjg4MzVmNGJkMSIsImlhdCI6MTczMDI0Mzc2MCwiZXhwIjoxNzMwMjQ3MzYwfQ.iDV1zYNEzHvPTpVgNjFevEL6gBougbx7a9tc4NUIm_I
+GET https://student-card-backend.onrender.com/api/students/674513dca79f130de6585972
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMjU4MDI0NCwiZXhwIjoxNzMyNTgzODQ0fQ.y10d_gBIaOvApa9SZNsvIW-V2J4Hh5u4kSUbaUhckUQ
 
 ### Atualiza um Estudante pelo ID (Protegido)
 # Substitua `student_id` com o ID do estudante para atualizar
 PUT http://localhost:3000/api/students/67216d5a645c2cf8835f4bdc
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MjE2YzhmNjQ1YzJjZjg4MzVmNGJkMSIsImlhdCI6MTczMDI0Mzc2MCwiZXhwIjoxNzMwMjQ3MzYwfQ.iDV1zYNEzHvPTpVgNjFevEL6gBougbx7a9tc4NUIm_I
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMjU4MDI0NCwiZXhwIjoxNzMyNTgzODQ0fQ.y10d_gBIaOvApa9SZNsvIW-V2J4Hh5u4kSUbaUhckUQ
 
 {
   "name": "Renan Costa Alencar",
@@ -60,4 +60,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MjE2YzhmN
 ### Deleta um estudante pelo ID (Protegido)
 # Substitua `student_id` com o ID do estudante para apagar
 DELETE http://localhost:3000/api/students/67216d5a645c2cf8835f4bdc
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MjE2YzhmNjQ1YzJjZjg4MzVmNGJkMSIsImlhdCI6MTczMDI0Mzc2MCwiZXhwIjoxNzMwMjQ3MzYwfQ.iDV1zYNEzHvPTpVgNjFevEL6gBougbx7a9tc4NUIm_I
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMjU4MDI0NCwiZXhwIjoxNzMyNTgzODQ0fQ.y10d_gBIaOvApa9SZNsvIW-V2J4Hh5u4kSUbaUhckUQ

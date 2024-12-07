@@ -1,0 +1,155 @@
+# ### Entra com um usuário existente
+# /*POST https://student-card-backend.onrender.com/api/auth/login
+# Content-Type: application/json
+
+# {
+#   "email": "renan.alencar@esuda.edu.br",
+#   "password": "password123"
+# }
+
+# ### Retorna todas as carteirinhas (Protegido)
+# GET https://student-card-backend.onrender.com/api/students
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMjgzMzUxNCwiZXhwIjoxNzMyODM3MTE0fQ.TektbTR2K5LwAztfnJxmu6fSxhBApwIZaAwy6ds1AWo
+
+
+### Entra com um usuário existente
+POST https://student-card-backend.onrender.com/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "domingos@esuda.edu.br",
+  "password": "esuda"
+}
+
+### Retorna todas as carteirinhas (Protegido)
+GET https://student-card-backend.onrender.com/api/students
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTIyODE0NjcxODRhODRlNThhOTM1YiIsImlhdCI6MTczMzQzNzk3MCwiZXhwIjoxNzMzNDQxNTcwfQ.S1BBUnWgBidifvLJz09iQFh6M2Vj5wf2xy4Gh-13200
+
+
+### Cria uma carteirinha (Protegido)
+POST https://student-card-backend.onrender.com/api/students
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTIyODE0NjcxODRhODRlNThhOTM1YiIsImlhdCI6MTczMzQzNzU3MywiZXhwIjoxNzMzNDQxMTczfQ.CoVL0gOWxWfN_rismwXQtA9Q1ukJs7WU58YyQG2O0aY
+
+{
+  "name": "Anderson Ferreira",
+  "cpf": "289.357.760-55",
+  "birthDate": "1995-05-15",
+  "institution": "Falcudade ESUDA",
+  "course": "Redes de Computadores",
+  "issuer": "Falcudade ESUDA",
+  "validity": "2025-03-30"
+}
+
+
+### Cria uma carteirinha (Protegido)
+POST https://student-card-backend.onrender.com/api/students
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTIyOWE4NjcxODRhODRlNThhOTM2NSIsImlhdCI6MTczMzQzODA4OCwiZXhwIjoxNzMzNDQxNjg4fQ.L6oKW3CQBzn02PUoTNaNZi1BgBpeoFD58OLt-VEAciU
+
+{
+  "name": "Jadilson Queiroz",
+  "cpf": "905.287.760-11",
+  "birthDate": "1987-09-25",
+  "institution": "Falcudade ESUDA",
+  "course": "Redes de Computadores",
+  "issuer": "Falcudade ESUDA",
+  "validity": "2025-03-30"
+}
+
+
+
+### Cria uma carteirinha (Protegido)
+POST https://student-card-backend.onrender.com/api/students
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTIxOGJiMjk0MTdkMzFkOTk4ZGNhZSIsImlhdCI6MTczMzQzODM3NCwiZXhwIjoxNzMzNDQxOTc0fQ.M72dUYn0bITDq_U7PZyhuutiusM-UsxtdjCjxdMMEyA
+
+{
+  "name": "Maria Carla Guimarães",
+  "cpf": "956.932.760-77",
+  "birthDate": "1989-03-15",
+  "institution": "Falcudade ESUDA",
+  "course": "Redes de Computadores",
+  "issuer": "Falcudade ESUDA",
+  "validity": "2025-03-30"
+}
+
+
+### Cria uma carteirinha (Protegido)
+POST https://student-card-backend.onrender.com/api/students
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTIyY2Y1NjcxODRhODRlNThhOTM3NyIsImlhdCI6MTczMzQzODc2MywiZXhwIjoxNzMzNDQyMzYzfQ.osOVe-e2Hq5JQXnMPDehnfX0APDI9Z4OxLA7vcwqSO4
+
+{
+  "name": "MARIA ALICE ANDRADE CALAZANS",
+  "cpf": "124.732.800-47",
+  "birthDate": "1990-04-15",
+  "institution": "Falcudade ESUDA",
+  "course": "Redes de Computadores",
+  "issuer": "Falcudade ESUDA",
+  "validity": "2025-03-30"
+}
+
+
+### Cria uma carteirinha (Protegido)
+POST https://student-card-backend.onrender.com/api/students
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTIyZTliNjcxODRhODRlNThhOTM4MSIsImlhdCI6MTczMzQzOTE3MiwiZXhwIjoxNzMzNDQyNzcyfQ.xR1sCFxwF84dYFBq1UTpxasEAXlOxYIDowvAo68385M
+
+{
+  "name": "Jymmy Barreto",
+  "cpf": "678.532.800-00",
+  "birthDate": "1988-09-09",
+  "institution": "Falcudade ESUDA",
+  "course": "Redes de Computadores",
+  "issuer": "Falcudade ESUDA",
+  "validity": "2025-03-30"
+}
+
+### Cria uma carteirinha (Protegido)
+POST https://student-card-backend.onrender.com/api/students
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTIyZjk4NjcxODRhODRlNThhOTM4OCIsImlhdCI6MTczMzQzOTM5OCwiZXhwIjoxNzMzNDQyOTk4fQ.zpSjsIap903eHPeDx1RKMyDu-wZeDeiI2s_t-79Lj9Q
+
+{
+  "name": "ALEXANDRE FRANCISCO PONTES DOS SANTOS",
+  "cpf": "178.432.400-00",
+  "birthDate": "1989-02-19",
+  "institution": "Falcudade ESUDA",
+  "course": "Redes de Computadores",
+  "issuer": "Falcudade ESUDA",
+  "validity": "2025-03-30"
+}
+
+
+### Cria uma carteirinha (Protegido)
+POST https://student-card-backend.onrender.com/api/students
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTIzMDI0NjcxODRhODRlNThhOTM4ZiIsImlhdCI6MTczMzQzOTU0NSwiZXhwIjoxNzMzNDQzMTQ1fQ.uDG6drEVWdfqvKvqd4g-SoY0_9xcsXzubzbDoOswEn0
+
+{
+  "name": "JOSÉ DIÓGENES RODRIGUES ACCIOLY",
+  "cpf": "456.812.734-00",
+  "birthDate": "1984-08-12",
+  "institution": "Falcudade ESUDA",
+  "course": "Redes de Computadores",
+  "issuer": "Falcudade ESUDA",
+  "validity": "2025-03-30"
+}
+
+
+
+### Cria uma carteirinha (Protegido)
+POST https://student-card-backend.onrender.com/api/students
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTIzMTNlNjcxODRhODRlNThhOTM5NiIsImlhdCI6MTczMzQzOTgyMCwiZXhwIjoxNzMzNDQzNDIwfQ.0ZKsdObCVhrHM0QyEFrwZ2__AHfdzZnWhO5zXE42W5Q
+
+{
+  "name": "DOMINGOS SÁVIO RIBEIRO MENDES",
+  "cpf": "256.912.746-01",
+  "birthDate": "1985-07-17",
+  "institution": "Falcudade ESUDA",
+  "course": "Redes de Computadores",
+  "issuer": "Falcudade ESUDA",
+  "validity": "2025-03-30"
+}

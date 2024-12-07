@@ -22,6 +22,7 @@ exports.getStudent = async (req, res) => {
 exports.createStudent = async (req, res) => {
   const { name, cpf, birthDate, institution, course, issuer, validity } =
     req.body;
+  const profilePicture = req.file ? req.file.path : null;
 
   try {
     const student = new Student({
@@ -33,6 +34,7 @@ exports.createStudent = async (req, res) => {
       issuer,
       validity,
       userId: req.user._id,
+      profilePicture,
     });
 
     const createdStudent = await student.save();
@@ -45,6 +47,10 @@ exports.createStudent = async (req, res) => {
 exports.updateStudent = async (req, res) => {
   const { id } = req.params;
   const updatedData = req.body;
+
+  if (req.file) {
+    updatedData.profilePicture = req.file.path;
+  }
 
   try {
     const student = await Student.findById(id);

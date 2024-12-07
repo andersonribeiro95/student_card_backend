@@ -19,33 +19,34 @@ Content-Type: application/json
 
 ### Retorna todas as carteirinhas (Protegido)
 GET https://student-card-backend.onrender.com/api/students
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMjU4MDI0NCwiZXhwIjoxNzMyNTgzODQ0fQ.y10d_gBIaOvApa9SZNsvIW-V2J4Hh5u4kSUbaUhckUQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMzUzMzcxNCwiZXhwIjoxNzMzNTM3MzE0fQ.gjLhC3O0lF8bGTaUpEm2eIsyWCq6wCoHOhTNgfxdjd0
 
 ### Cria uma carteirinha (Protegido)
 POST https://student-card-backend.onrender.com/api/students
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMjU4MDI0NCwiZXhwIjoxNzMyNTgzODQ0fQ.y10d_gBIaOvApa9SZNsvIW-V2J4Hh5u4kSUbaUhckUQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTIyMGFkNjcxODRhODRlNThhOTMyZCIsImlhdCI6MTczMzQzNjA3MiwiZXhwIjoxNzMzNDM5NjcyfQ.7WDndaD8_aD-4SBmLIuhtU8YoeNGwnKSJ9fCda7XM-0
 
 {
-  "name": "Renan Costa Alencar",
-  "cpf": "205.437.760-00",
-  "birthDate": "1987-05-15",
+  "name": "Angelica Carneiro",
+  "cpf": "067.437.798-00",
+  "birthDate": "1990-12-31",
   "institution": "Falcudade ESUDA",
-  "course": "Redes de Computadores",
+  "course": "ADS- Análise e Desenvolvimento de Sistemas",
   "issuer": "Falcudade ESUDA",
   "validity": "2025-03-30"
 }
 
 ### Retorna uma única carteirinha pelo ID (Protegido)
 # Substitua `student_id` com o ID do estudante para testar este endpoint
-GET https://student-card-backend.onrender.com/api/students/674513dca79f130de6585972
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMjU4MDI0NCwiZXhwIjoxNzMyNTgzODQ0fQ.y10d_gBIaOvApa9SZNsvIW-V2J4Hh5u4kSUbaUhckUQ
+GET 
+https://student-card-backend.onrender.com/api/students/674513dca79f130de6585972
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMjY2MDQ0NSwiZXhwIjoxNzMyNjY0MDQ1fQ.6lHphRAFaYI92F9srYDy1ObdYdT9400wtvXJJyTYRCc
 
 ### Atualiza um Estudante pelo ID (Protegido)
 # Substitua `student_id` com o ID do estudante para atualizar
 PUT http://localhost:3000/api/students/67216d5a645c2cf8835f4bdc
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMjU4MDI0NCwiZXhwIjoxNzMyNTgzODQ0fQ.y10d_gBIaOvApa9SZNsvIW-V2J4Hh5u4kSUbaUhckUQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMjY2MDQ0NSwiZXhwIjoxNzMyNjY0MDQ1fQ.6lHphRAFaYI92F9srYDy1ObdYdT9400wtvXJJyTYRCc
 
 {
   "name": "Renan Costa Alencar",
@@ -60,4 +61,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1N
 ### Deleta um estudante pelo ID (Protegido)
 # Substitua `student_id` com o ID do estudante para apagar
 DELETE http://localhost:3000/api/students/67216d5a645c2cf8835f4bdc
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMjU4MDI0NCwiZXhwIjoxNzMyNTgzODQ0fQ.y10d_gBIaOvApa9SZNsvIW-V2J4Hh5u4kSUbaUhckUQ
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMjY2MDQ0NSwiZXhwIjoxNzMyNjY0MDQ1fQ.6lHphRAFaYI92F9srYDy1ObdYdT9400wtvXJJyTYRCc

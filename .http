@@ -19,7 +19,9 @@ Content-Type: application/json
 
 ### Retorna todas as carteirinhas (Protegido)
 GET https://student-card-backend.onrender.com/api/students
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMzUzMzcxNCwiZXhwIjoxNzMzNTM3MzE0fQ.gjLhC3O0lF8bGTaUpEm2eIsyWCq6wCoHOhTNgfxdjd0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMzg1NjU1NiwiZXhwIjoxNzMzODYwMTU2fQ.Q3piIq5-qoXu_iOTdTe5vwBxQniAWNy20JnyMz1pY_U
+
+
 
 ### Cria uma carteirinha (Protegido)
 POST https://student-card-backend.onrender.com/api/students
@@ -40,7 +42,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTIyMGFkN
 # Substitua `student_id` com o ID do estudante para testar este endpoint
 GET 
 https://student-card-backend.onrender.com/api/students/674513dca79f130de6585972
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMjY2MDQ0NSwiZXhwIjoxNzMyNjY0MDQ1fQ.6lHphRAFaYI92F9srYDy1ObdYdT9400wtvXJJyTYRCc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2JjNDQ1NWU1M2IwMDY2Yzk1NTgyNyIsImlhdCI6MTczMzg1NDkwMSwiZXhwIjoxNzMzODU4NTAxfQ.i0cxV7SsH7E6HZGiFlEzzH_KLM74N9Bh_klDXXIaffQ"
+
 
 ### Atualiza um Estudante pelo ID (Protegido)
 # Substitua `student_id` com o ID do estudante para atualizar

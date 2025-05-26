@@ -6,7 +6,7 @@ services:
       dockerfile: ./Dockerfile
     environment:
       NODE_ENV: production
-      MONGODB_URI: mongodb://localhost:27017/dnedigitaljsbackend
+      MONGODB_URI: mongodb://mongodb:27017/dnedigitaljsbackend
       PORT: 3000
     depends_on:
       - mongodb
@@ -16,6 +16,7 @@ services:
       - ./src:/app
   mongodb:
     image: mongo
+    container_name: mongodb
     ports:
       - 27017:27017
     volumes:

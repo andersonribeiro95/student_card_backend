@@ -25,6 +25,7 @@ jobs:
   docker-build-push:
     needs: build-test
     runs-on: ubuntu-latest
+    environment: Production
     steps:
       - uses: actions/checkout@v3
 
@@ -42,6 +43,7 @@ jobs:
   deploy-ec2:
     needs: docker-build-push
     runs-on: ubuntu-latest
+    environment: Production
     steps:
       - name: Deploy na AWS EC2 via SSH
         uses: appleboy/ssh-action@v1.0.0

@@ -52,7 +52,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            docker pull ${{ secrets.DOCKER_USERNAME }}/dnedigitaljsbackend
+            docker pull ${{ vars.DOCKERHUB_USERNAME }}/dnedigitaljsbackend
             docker stop backend || true
             docker rm backend || true
-            docker run -d --name backend -p 3000:3000 ${{ secrets.DOCKER_USERNAME }}/dnedigitaljsbackend
+            docker run -d --name backend -p 3000:3000 ${{ vars.DOCKERHUB_USERNAME }}/dnedigitaljsbackend
